@@ -10,37 +10,43 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/css.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="css/css.css" rel="stylesheet" type="text/css"/>
         <script src="js/js.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="conteiner-fluid">
+        <div class="col-xs-12">
+            <!--Cabecalho-->
             <div class="row">
-                <div id="banner" class="col-xs-12">
-                    <img class="banner" src="img/banner.png" />
-                    <span class="logo">Beta Games</span>
+                <div id="idx_cabecalho" class="col-xs-12">
+                    <div id="idx_banner">
+                        <img class="img-responsive" src="img/banner.png" alt="banner"/>
+                        <span>Games Beta</span>
+                    </div>   
                 </div>
             </div>
+            <!--Menu-->
             <div class="row">
-                <div class="col-xs-12 barra"></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="menu" class="col-xs-2 menu">
+                <div id="idx_corpoEsquerdo"class="col-xs-2">
+                    <div  id="idx_menu">
+                    <label id="idx_labelMenu" class="text-center">JOGOS</label>
                     <ul class="nav nav-pills nav-stacked">
-                        <div class="text-center">Jogos</div>
-                        <li class="btn-jogo" value="jogodavelha"><a href="#">Jogo da Velha</a></li>
-                        <li class="btn-jogo" value="jogodamemoria"><a href="#">Jogo da Memória</a></li>
-                        <li class="btn-jogo" value="sudoku"><a href="#">Sudoku</a></li>
+                        <li><a href="#" class="btn-jogo" name="JogoDaVelha">Jogo da Velha</a></li>
+                        <li><a href="#" class="btn-jogo" name="jogodamemoria">Jogo da Memória</a></li>
+                        <li><a href="#" class="btn-jogo" name="JogoDaMemoria">Atravesse a rua</a></li>
                     </ul>
                     </div>
-                    <div class="col-xs-10">
-                        <div id="conteudo">
-                            <h1>Bem vindo ao mundo dos jogos de raciocínio.</h1>
-                        </div>
+                </div>
+            <!--Conteudo-->
+                <div id="idx_corpoDireito"  class="col-xs-8"> 
+                    <div id="idx_conteudo">
                     </div>
+                </div>
+            </div>
+            <!--Rodapé-->
+            <div class="row">
+                <div  id="idx_rodape" class="col-xs-12">
                 </div>
             </div>
         </div>

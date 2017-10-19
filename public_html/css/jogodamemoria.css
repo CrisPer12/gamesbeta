@@ -7,27 +7,28 @@ and open the template in the editor.
     Created on : 08/10/2017, 18:10:12
     Author     : Zeta
 */
-#jmTudo{
-    left: 50%;
+#jm_Tudo{
     position: absolute;
+    left: 50%;
     transform: translate(-50%);
 }
-#jmJogo{
-    width: 100%;
-    height: 100%;
-    font-size: 0;
+.jm_Bloco{
+    display: inline-block;
+    width: 20%;
+    height: 120px;
     padding: 2px;
 }
-#jmQuadro{
+.jm_Item{
     width: 100%;
-    height:  100%;
-    background-color: AntiqueWhite;
+    height: 100%;
 }
-.jmBloco{
-    display: inline-block;
-    padding: 1px;
+.jm_linha{
+    font-size: 0px;
+    width: 500px;
+    height: 100%;
 }
-.jmItem{
-    width: 118px;
-    height: 118px;
+#jm_Quadro{
+    width: 100%;
+    height: 100%;
+    background-image: url("img/jogodamemoria/textura.jpg");
 }

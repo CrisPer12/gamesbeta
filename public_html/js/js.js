@@ -6,8 +6,9 @@
 
 $(function(){
     $('.btn-jogo').click(function(){
-        var tipo = $(this).attr('value');
-        $('#conteudo').load('jogos/'+tipo+'/play.html');
+        var tipo = $(this).attr('name');
+      // alert(tipo);
+        $('#idx_conteudo').load(tipo+'.html');
         //alert('jogos/'+tipo+'/play.html');
     });
 });
