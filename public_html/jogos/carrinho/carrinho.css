@@ -1,0 +1,39 @@
+#personagem{
+   width: 20px;
+   position: absolute;
+   left: 0px;
+   top: 80px;
+   height: 20px;
+   background-color:
+   blue;
+}
+.inimigo{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   left: 40px;
+   top: 0px;
+   background-color: 
+   black;
+}
+#tela{
+   position: relative;
+   width: 180px;
+   height: 180px;
+   background-color: skyblue;
+}
+
+#inimigos{
+}
+#inimigo2{
+   left: 60px;
+}
+#inimigo3{
+   left: 80px;
+}
+#inimigo4{
+   left: 100px;
+}
+#inimigo5{
+   left: 120px;
+}

@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/10/2017, 20:38:29
+    Author     : Zeta
+*/
+#sdkJogo{
+    font-size: 20px;
+}
+#sdkQuadroGeral{
+    display: inline-block;
+    font-size: 0px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 500px;
+    height: 460px;
+}
+.largeSquare{
+    display: inline-block;
+    width: 33%;
+    height: 33%;
+    border: 1px solid black;
+}
+.smallSquare{
+    font-size: 20px;
+    display: inline-block;
+    width: 33.3%;
+    height: 50px;
+    border: 1px solid black;
+}
+.numeros{
+    width: 50px;
+    height: 450px;
+    left: 27.5%;
+    position: absolute;
+}
+.numero{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}

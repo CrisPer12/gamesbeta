@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/10/2017, 18:10:12
+    Author     : Zeta
+*/
+#jmTudo{
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+#jmJogo{
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    padding: 2px;
+}
+#jmQuadro{
+    width: 100%;
+    height:  100%;
+    background-color: AntiqueWhite;
+}
+.jmBloco{
+    display: inline-block;
+    padding: 1px;
+}
+.jmItem{
+    width: 118px;
+    height: 118px;
+}

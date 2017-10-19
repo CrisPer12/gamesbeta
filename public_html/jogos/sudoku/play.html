@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sudoku</title>
+        <meta charset="UTF-8">
+        <link href="css/sudoku.css" rel="stylesheet" type="text/css"/>
+        <script src="js/sudoku.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button id="olhar">Olhar</button>
+        <div id="sdkConteudo">
+            <div id="sdkDesc" class="text-center">
+                <h1>Sudoku</h1>
+            </div>
+            <div id="sdkJogo">
+                <div class="numeros">
+                    <input type="button" class="numero" value="1">
+                    <input type="button"  class="numero" value="2">
+                    <input type="button"  class="numero" value="3">
+                    <input type="button"  class="numero" value="4">
+                    <input type="button"  class="numero" value="5">
+                    <input type="button"  class="numero" value="6">
+                    <input type="button"  class="numero" value="7">
+                    <input type="button"  class="numero" value="8">
+                    <input type="button"  class="numero" value="9">
+                    <input type="button"  class="numero" value="  ">
+                </div>
+                <div id="sdkQuadroGeral">
+                    <div id="sdkBloco1">
+                        <div id="sdkLGQuadro1" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro1-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro1-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro1-3" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro2-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro2-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro2-3" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro3-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro3-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro3-3" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                        <div id="sdkLGQuadro2" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro1-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro1-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro1-6" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro2-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro2-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro2-6" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro3-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro3-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro3-6" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                        <div id="sdkLGQuadro3" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro1-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro1-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro1-9" class="smallSquare" value="" />
+                            </div> 
+                            <div>
+                                <input type="button" id="sdkQuadro2-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro2-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro2-9" class="smallSquare" value="" />
+                            </div> 
+                            <div>
+                                <input type="button" id="sdkQuadro3-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro3-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro3-9" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="sdkBloco2">
+                        <div id="sdkLGQuadro4" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro4-1" class="smallSquare" value="" />
+                                <input type="button"  id="sdkQuadro4-2" class="smallSquare" value="" />
+                                <input type="button"  id="sdkQuadro4-3" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro5-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro5-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro5-3" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro6-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro6-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro6-3" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                        <div id="sdkLGQuadro5" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro4-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro4-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro4-6" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro5-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro5-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro5-6" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro6-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro6-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro6-6" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                        <div id="sdkLGQuadro6" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro4-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro4-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro4-9" class="smallSquare" value="" />
+                            </div> 
+                            <div>
+                                <input type="button" id="sdkQuadro5-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro5-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro5-9" class="smallSquare" value="" />
+                            </div> 
+                            <div>
+                                <input type="button" id="sdkQuadro6-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro6-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro6-9" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                    </div>
+                    <div id="sdkBloco3">
+                        <div id="sdkLGQuadro4" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro7-1" class="smallSquare" value="" />
+                                <input type="button"  id="sdkQuadro7-2" class="smallSquare" value="" />
+                                <input type="button"  id="sdkQuadro7-3" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro8-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro8-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro8-3" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro9-1" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro9-2" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro9-3" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                        <div id="sdkLGQuadro5" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro7-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro7-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro7-6" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro8-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro8-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro8-6" class="smallSquare" value="" />
+                            </div>
+                            <div>
+                                <input type="button" id="sdkQuadro9-4" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro9-5" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro9-6" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                        <div id="sdkLGQuadro6" class="largeSquare">
+                            <div>
+                                <input type="button" id="sdkQuadro7-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro7-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro7-9" class="smallSquare" value="" />
+                            </div> 
+                            <div>
+                                <input type="button" id="sdkQuadro8-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro8-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro8-9" class="smallSquare" value="" />
+                            </div> 
+                            <div>
+                                <input type="button" id="sdkQuadro9-7" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro9-8" class="smallSquare" value="" />
+                                <input type="button" id="sdkQuadro9-9" class="smallSquare" value="" />
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
