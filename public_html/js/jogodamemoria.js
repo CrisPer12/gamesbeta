@@ -1,6 +1,9 @@
 // como criar um on ready
-const max = 10;
+
 $(document).ready(function(){
+    escolhas();
+});
+function escolhas(){
     var jm_imagem1; 
     var jm_imagem2;
     var jm_clique = 1;
@@ -18,4 +21,4 @@ $(document).ready(function(){
             jm_clique = 1;
         }
     });
-});
+}
