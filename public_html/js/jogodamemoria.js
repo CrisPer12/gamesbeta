@@ -16,7 +16,7 @@ function escolhas(){
             jm_imagem2 = $(this).attr('alt');
             if(jm_imagem1!==jm_imagem2){
                 $('.jm_ImgVirada[alt="'+jm_imagem1+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
-                $(this).attr('src', 'img/jogodamemoria/padrao.jpg');
+                
             }
             jm_clique = 1;
         }
