@@ -5,7 +5,7 @@
  */
 
 $(function(){
-    $('.btn-jogo').click(function(){
+    $('.idx_btnJogo').click(function(){
         var tipo = $(this).attr('name');
       // alert(tipo);
         $('#idx_conteudo').load(tipo+'.html');
