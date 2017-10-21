@@ -15,7 +15,9 @@ function escolhas(){
         }else{
             imagem2 = $(this).attr('alt');
             if(imagem1!==imagem2){
-                $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
+                setTimeout(function(){
+                    $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
+                }, 2000);
             }
             jm_clique = 1;
         }
