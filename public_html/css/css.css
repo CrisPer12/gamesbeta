@@ -7,8 +7,21 @@ and open the template in the editor.
     Created on : 12/10/2017, 16:18:19
     Author     : Zeta
 */
-body, html{
+html, body {
+height: 100%;
+}
+body{
     font-size: 12px;
+}
+* html #idx_tudo {
+    height: 100%;
+}
+#idx_tudo{  
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    min-height: 100%;
 }
 #idx_banner{
     width: 100%;
@@ -43,17 +56,15 @@ body, html{
     border: 1px solid #DCDCDC;
 }
 #idx_cabecalho{
-    position: relative;
 }
 #idx_corpoEsquerdo{
-    position: relative;
 }
 #idx_corpoDireito{
-    position: relative;
 }
 #idx_rodape{
     position: absolute;
-    float: bottom;
+    bottom: 0;
     background-color: Grey;
     font-size: 100%;
+    padding: 3px;
 }
