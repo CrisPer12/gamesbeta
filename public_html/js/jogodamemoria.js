@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
     const TotalCards = 15;
-    escolhas();
+    escolhas(TotalCards);
     montarImagens(TotalCards);
 });
 function montarImagens(TotalCards){
@@ -16,24 +16,32 @@ function montarImagens(TotalCards){
         $('#card'+(i+parseInt(TotalCards))).attr('alt', 'img'+tabelaIMG[i]);
     }
 }
-function escolhas(){
+function escolhas(TotalCards){
     var imagem1; 
     var imagem2;
-    var jm_clique = 1;
+    var clique = 1;
     $('.jm_ImgVirada').click(function(){
-        $(this).attr('src', 'img/jogodamemoria/'+$(this).attr('alt')+'.png');
-        if(jm_clique === 1){
+        if(clique !== 0){
+            $(this).attr('src', 'img/jogodamemoria/'+$(this).attr('alt')+'.png');
+        }
+        if(clique === 1){
             imagem1 = $(this).attr('alt');
-            jm_clique = 2;
-        }else{
+            clique = 2;
+        }else if(clique === 2){
+            clique=0;
             imagem2 = $(this).attr('alt');
-            if(imagem1!==imagem2){
-                setTimeout(function(){
-                    $('.jm_ImgVirada[alt="'+imagem1+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
-                    $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
-                }, 700);
-            }
-            jm_clique = 1;
+            setTimeout(function(){
+                if(imagem1!==imagem2){
+                        $('.jm_ImgVirada[alt="'+imagem1+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
+                        $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
+                }else{
+                    $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('class', 'jm_ImgDesvirada');
+                }
+                clique = 1;
+            }, 700);
+        }
+        if($('.jm_ImgDesvirada').length===(TotalCards*2)){
+            alert('vitoria');
         }
     });
 }
