@@ -2,21 +2,21 @@
  //TOTAL DE CARTAS
 
 $(document).ready(function(){
-    const TotalCards = 15;
-    escolhas(TotalCards);
-    montarImagens(TotalCards);
+    const jm_TotalCards = 15;
+    jm_Escolhas();
+    jm_MontarImagens(jm_TotalCards);
 });
-function montarImagens(TotalCards){
-    var tabelaIMG = tabNumerosAleatorios(TotalCards);
-    for(var i=1;i<=TotalCards;i++){
+function jm_MontarImagens(jm_TotalCards){
+    var tabelaIMG = tabNumerosAleatorios(jm_TotalCards);
+    for(var i=1;i<=jm_TotalCards;i++){
         $('#card'+i).attr('alt', 'img'+tabelaIMG[i]);
     }
-    tabelaIMG = tabNumerosAleatorios(TotalCards);
-    for(var i=1;i<=TotalCards;i++){
-        $('#card'+(i+parseInt(TotalCards))).attr('alt', 'img'+tabelaIMG[i]);
+    tabelaIMG = tabNumerosAleatorios(jm_TotalCards);
+    for(var i=1;i<=jm_TotalCards;i++){
+        $('#card'+(i+parseInt(jm_TotalCards))).attr('alt', 'img'+tabelaIMG[i]);
     }
 }
-function escolhas(TotalCards){
+function jm_Escolhas(){
     var imagem1; 
     var imagem2;
     var clique = 1;
