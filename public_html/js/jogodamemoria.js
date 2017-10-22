@@ -40,7 +40,7 @@ function escolhas(TotalCards){
                 clique = 1;
             }, 700);
         }
-        if($('.jm_ImgDesvirada').length===(TotalCards*2)){
+        if($('.jm_ImgDesvirada').length===(30)){
             alert('vitoria');
         }
     });
