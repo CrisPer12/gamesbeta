@@ -29,7 +29,7 @@ body{
     font-size: 700%;
     color: black;
     font-family: "Times New Roman", Times, serif;
-    text-shadow: 0px 0px 5px red;
+    text-shadow: 0px 0px 5px black;
 }
 #idx_labelMenu{
     font-size: 20px;
@@ -48,7 +48,7 @@ body{
 #idx_corpoEsquerdo{
     position: relative;
 }
-#idx_corpoDireitos{
+#idx_corpoDireito{
     position: relative;
 }
 #idx_rodape{

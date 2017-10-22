@@ -7,6 +7,9 @@ and open the template in the editor.
     Created on : 08/10/2017, 18:10:12
     Author     : Zeta
 */
+#jm_Corpo{
+    position: relative;
+}
 #jm_Tudo{
     position: absolute;
     left: 50%;
