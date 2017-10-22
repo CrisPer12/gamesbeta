@@ -52,4 +52,7 @@ body{
     position: relative;
 }
 #idx_rodape{
+    position: relative;
+    background-color: Grey;
+    font-size: 100%;
 }
