@@ -35,7 +35,8 @@ function escolhas(TotalCards){
                         $('.jm_ImgVirada[alt="'+imagem1+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
                         $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('src', 'img/jogodamemoria/padrao.jpg');
                 }else{
-                    $('.jm_ImgVirada[alt="'+imagem2+'"]').attr('class', 'jm_ImgDesvirada');
+                    $('.jm_Card[alt="'+imagem2+'"]').removeClass('jm_ImgVirada');
+                    $('.jm_Card[alt="'+imagem2+'"]').addClass('jm_ImgDesvirada');
                 }
                 clique = 1;
             }, 700);
