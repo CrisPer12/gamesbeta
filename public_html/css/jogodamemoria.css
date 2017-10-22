@@ -8,12 +8,8 @@ and open the template in the editor.
     Author     : Zeta
 */
 #jm_Corpo{
-    position: relative;
 }
 #jm_Tudo{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
 }
 .jm_Bloco{
     display: inline-block;
