@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 12/10/2017, 16:18:19
     Author     : Zeta
 */
-body{
+body, html{
     font-size: 12px;
 }
 #idx_banner{
@@ -52,7 +52,8 @@ body{
     position: relative;
 }
 #idx_rodape{
-    position: relative;
+    position: absolute;
+    float: bottom;
     background-color: Grey;
     font-size: 100%;
 }
