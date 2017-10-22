@@ -7,23 +7,29 @@ and open the template in the editor.
     Created on : 12/10/2017, 16:18:19
     Author     : Zeta
 */
+body{
+    font-size: 12px;
+}
 #idx_banner{
-    display: inline-block;
-    position: relative;
     width: 100%;
     height: 100%;
+    display: inline-block;
+    position: relative;
     border-bottom: 2px solid black;
-    font-size: 100px;
+}
+.banner{
+  background-image:  url("../img/banner.jpg");
+  height: 200px; 
 }
 #idx_banner span{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 100%;
-    color: white;
+    font-size: 700%;
+    color: black;
     font-family: "Times New Roman", Times, serif;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 5px red;
 }
 #idx_labelMenu{
     font-size: 20px;
@@ -32,6 +38,7 @@ and open the template in the editor.
     background-color: #98FB98;
 }
 #idx_menu{
+    font-size: 115%;
     background-color: #FFF5EE;
     border: 1px solid #DCDCDC;
 }
