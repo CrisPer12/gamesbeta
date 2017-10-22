@@ -11,7 +11,6 @@ and open the template in the editor.
     position: relative;
 }
 #jm_Tudo{
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
