@@ -12,3 +12,6 @@ $(function(){
         //alert('jogos/'+tipo+'/play.html');
     });
 });
+function gerarNumero(MAX) {
+    return ""+Math.floor(Math.random() * MAX + 1)+"";
+}
